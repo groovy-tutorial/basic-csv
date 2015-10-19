@@ -1,0 +1,26 @@
+plugins {
+    id 'groovy'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.5'
+}
+
+task run(dependsOn: 'classes', type: JavaExec) {
+    description 'Runs a groovy script in src/main/groovy'
+    group 'Tutorial'
+
+    classpath = sourceSets.main.runtimeClasspath
+    workingDir = 'src/main/groovy'
+
+    def script = System.getProperty("script")?: 'directory-list'
+    println "\nRunning script: $script\n"
+
+    main = script
+}
+
+defaultTasks 'run'

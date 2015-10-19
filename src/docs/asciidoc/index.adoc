@@ -1,0 +1,68 @@
+= Reading and writing CSV files
+Duncan Dickinson <duncan@groovy-tutorial.org>
+v0.1, 2015-08-25
+:groovy-version: 2.4.4
+:licence: Apache License, Version 2.0
+:licence-url: http://www.apache.org/licenses/LICENSE-2.0
+:src: https://github.com/groovy-tutorial/basic-csv
+:sourcedir: ../../main/groovy
+:level: basic
+:keywords: files, csv
+:description:
+:icons: font
+:source-highlighter: coderay
+:source-language: groovy
+:toc:
+
+Groovy lets you easily work with JSON files
+
+== Introduction
+
+=== Using this tutorial
+For details on running the tutorial on your own system, please refer to the http://www.groovy-tutorial.org/GettingStarted.html[Getting started guide]
+
+Access the source code:
+
+* {src}/tree/gh-pages[Source code]
+* {src}/archive/gh-pages.zip[As a zip file]
+
+The source code includes two command line scripts: `run` (for *nix) and `run.bat` (for Windows) - they are very basic helpers that let you run the tutorial scripts via Gradle. To use the `run` scripts just call `run <script>` where `<script>` is the name of the script minus the `.groovy` extension. For example, to run the `directory-list.groovy` script you just use:
+
+    ./run directory-list
+
+The code in this tutorial was prepared using Groovy version {groovy-version} and is licensed under {licence-url}[{licence}].
+
+== Reading a CSV
+[source]
+.link:src/main/groovy/csv-read.groovy[csv-read.groovy]
+----
+include::{sourcedir}/csv-read.groovy[]
+----
+
+== Reading into an Expando
+[source]
+.link:src/main/groovy/csv-read-expando.groovy[csv-read-expando.groovy]
+----
+include::{sourcedir}/csv-read-expando.groovy[]
+----
+
+== Reading into a Groovy Bean
+[source]
+.link:src/main/groovy/csv-read-bean.groovy[csv-read-bean.groovy]
+----
+include::{sourcedir}/csv-read-bean.groovy[]
+----
+
+== From CSV to JSON
+[source]
+.link:src/main/groovy/csv-read-json.groovy[csv-read-json.groovy]
+----
+include::{sourcedir}/csv-read-json.groovy[]
+----
+
+== From CSV to XML
+[source]
+.link:src/main/groovy/csv-read-xml.groovy[csv-read-xml.groovy]
+----
+include::{sourcedir}/csv-read-xml.groovy[]
+----
