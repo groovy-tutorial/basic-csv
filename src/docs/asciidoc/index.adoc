@@ -14,7 +14,7 @@ v0.1, 2015-08-25
 :source-language: groovy
 :toc:
 
-Groovy lets you easily work with JSON files
+Reading CSV files can be annoying but Groovy makes it a little less so.
 
 == Introduction
 
